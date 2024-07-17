@@ -16,5 +16,5 @@ import pytest
         (30, [0, 1, 0, 1])
     ]
 )
-def test_return_correct_combination_of_coins(cents: int, result: list[int]) -> None:
+def test_correct_coin_combination(cents: int, result: list[int]) -> None:
     assert get_coin_combination(cents) == result
